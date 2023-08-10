@@ -1,6 +1,7 @@
 package Admin;
 
 import Payment.Discount;
+import Services.Service;
 
 public class AdminController {
     Discount discount;

@@ -7,6 +7,11 @@ public  class Service{
 
     ArrayList<ServiceProvider> ServiceProviders;
 
+    public Service(String name, ArrayList<ServiceProvider> serviceProviders) {
+        Name = name;
+        ServiceProviders = serviceProviders;
+    }
+
     public String getName() {
         return Name;
     }

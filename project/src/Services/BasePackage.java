@@ -7,6 +7,11 @@ public class BasePackage {
     double Cost;
     ArrayList<Service> IncludedService;
 
+    public BasePackage(double cost, ArrayList<Service> includedService) {
+        Cost = cost;
+        IncludedService = includedService;
+    }
+
     public String getId() {
         return Id;
     }

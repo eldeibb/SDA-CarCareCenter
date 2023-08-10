@@ -1,12 +1,33 @@
 package Services;
 
-public abstract class Service extends Process {
-    Process process1;
+import java.util.ArrayList;
 
-    public Service(Process process1) {
-        this.process1 = process1;
+public  class Service{
+    String Name, Id;
+
+    ArrayList<ServiceProvider> ServiceProviders;
+
+    public String getName() {
+        return Name;
     }
 
-    public abstract double CalcCost();
+    public void setName(String name) {
+        Name = name;
+    }
 
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String id) {
+        Id = id;
+    }
+
+    public ArrayList<ServiceProvider> getServiceProviders() {
+        return ServiceProviders;
+    }
+
+    public void setServiceProviders(ArrayList<ServiceProvider> serviceProviders) {
+        ServiceProviders = serviceProviders;
+    }
 }

@@ -8,6 +8,10 @@ import static Passenger.VehicleModel.PassengerType.SpecialPassengersFit;
 
 public class SpecialPassengerFit extends Selection {
 
+    public SpecialPassengerFit(ArrayList<VehicleModel> waitingList) {
+        super(waitingList);
+    }
+
     public VehicleModel Select(ArrayList<VehicleModel> WaitingList) {
         for(int i = 0; i < WaitingList.size()-1;i++){
             if(WaitingList.get(i).getPassengerType() == SpecialPassengersFit){

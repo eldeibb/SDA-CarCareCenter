@@ -1,7 +1,7 @@
 package Payment;
 
 public class MembershipDiscount {
-    public double CalcCost{
+    public double CalcCost(){
 
     }
 }

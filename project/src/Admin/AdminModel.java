@@ -2,6 +2,11 @@ package Admin;
 
 public class AdminModel {
     String Name, ID;
+    AdminController admin;
+
+    public AdminModel(AdminController admin) {
+        this.admin = admin;
+    }
 
     public String getName() {
         return Name;
